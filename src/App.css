@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(19, 21, 24, 1);
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  max-width: 412px;
+  height: 416px;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(35, 42, 52, 1),
+    rgba(24, 30, 39, 1)
+  );
+  padding: 32px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.ratings {
+  display: flex;
+  gap: 21px;
+  height: 51px;
+}
