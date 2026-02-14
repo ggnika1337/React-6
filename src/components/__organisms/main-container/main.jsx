@@ -1,8 +1,8 @@
 import React from "react";
 import Star from "../../__atoms/star/star";
 import Texts from "../../__molecules/texts/texts";
-import Rating from "../../__molecules/rating/rating";
-import Btn from "../../__molecules/button/btn";
+import Rating from "../../__atoms/rating/rating";
+import Btn from "../../__atoms/button/btn";
 
 function Main() {
   return (
@@ -10,14 +10,16 @@ function Main() {
       <div className="main-container">
         <Star />
         <Texts />
-        <div className="ratings">
-          <Rating number={1} />
-          <Rating number={2} />
-          <Rating number={3} />
-          <Rating number={4} />
-          <Rating number={5} />
+        <div className="ratings-btn">
+          <div className="ratings">
+            <Rating number={1} className="off" />
+            <Rating number={2} className="off" />
+            <Rating number={3} className="off" />
+            <Rating number={4} className="off" />
+            <Rating number={5} className="off" />
+          </div>
+          <Btn />
         </div>
-        <Btn />
       </div>
     </>
   );

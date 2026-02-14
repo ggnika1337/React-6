@@ -7,8 +7,8 @@
   color: white;
   transition: 1s;
   border: 0px;
-  position: absolute;
   bottom: 32px;
+  cursor: pointer;
 }
 
 .btn:hover {

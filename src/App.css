@@ -17,6 +17,7 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .main-container {
@@ -31,10 +32,56 @@ body {
   padding: 32px;
   border-radius: 30px;
   position: relative;
+  transition: 1s;
+}
+
+.ratings-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .ratings {
   display: flex;
-  gap: 21px;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.off,
+.on {
+  min-width: 51px;
   height: 51px;
+  border-radius: 100%;
+  background-color: rgba(38, 46, 56, 1);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(124, 135, 152, 1);
+  cursor: pointer;
+  margin-top: 25px;
+  transition: 1s;
+}
+
+.on {
+  background-color: rgba(252, 118, 20, 1);
+}
+
+.off:hover {
+  background-color: rgba(124, 135, 152, 0.5);
+}
+
+@media only screen and (max-width: 410px) {
+  .main-container {
+    padding: 16px;
+  }
 }
