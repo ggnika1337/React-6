@@ -1,5 +1,5 @@
 import React from "react";
-import Phone from "../../../../assets/images/Phone.png";
+import Phone from "../../../assets/images/phone.png";
 import Texts from "../../__molecules/texts/texts";
 
 function Finished({ selectedValue, style }) {
