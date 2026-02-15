@@ -1,9 +1,4 @@
-.texts-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 30px;
-}
+
 
 h1 {
   font-weight: 700;

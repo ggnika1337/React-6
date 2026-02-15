@@ -1,9 +1,11 @@
 import React from "react";
 
-function Rating({ number, className }) {
+function Rating({ number, className, onClick }) {
   return (
     <>
-      <div className={className}>{number}</div>
+      <div onClick={onClick} className={className}>
+        {number}
+      </div>
     </>
   );
 }
